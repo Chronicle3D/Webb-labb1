@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Agha Foods</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body class="menu-background">
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Agha foods.</a>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="about.html#about">About</a>
+            <a class="active" href="menu.html#menu">Menu</a>
+        </nav>
+    
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart" id="cart-button"></a>
+        </div>
+    </header>
+    
+
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">Our Menu</h3>
+        <h1 class="heading">Chefs kisses</h1>
+        <div class="box-container">
+            <div class="box">
+                <img decoding="async" src="img/Tasty Spaghetti.jpg" alt="">
+                <h3>Tasty Spaghetti</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="img/Crispy Fried Chicken.jpg" alt="">
+                <h3>Crispy Fried Chicken</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$18.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="img/Tasty Burger.jpg" alt="">
+                <h3>Tasty Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>$12.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="img/Salad.jpg" alt="">
+                <h3>Salad</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span>$14.99</span>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="order" id="order">
+        <h3 class="sub-heading">How to Order</h3>
+        <h1 class="heading">Easy Ordering Steps</h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hamburger"></i>
+                <h3>1. Select Dish</h3>
+                <p>Browse through our menu and choose your favorite dishes to add to your cart.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-wallet"></i>
+                <h3>2. Check your cart</h3>
+                <p>Once you've added dishes to you cart, you can check your cart in the top right to either remove or proceed to checkout.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-truck"></i>
+                <h3>3. Checkout</h3>
+                <p>Fill in all the needed information and once we've confirmed your order we'll send it out.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-container hidden" id="cart-container">
+        <section class="cart" id="cart">
+            <h3 class="sub-heading">Shopping Cart</h3>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button class="btn" id="checkout-btn">Checkout</button>
+            </div>
+            <div id="checkout-form" class="hidden">
+                <h3 class="sub-heading">Checkout Form</h3>
+                <form id="customer-info-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="payment">Swish Number:</label>
+                    <input type="text" id="payment" name="payment" required>
+
+                    <button type="button" class="btn" id="submit-order-btn">Submit Order</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="cart.js" defer></script>
+</body>
+</html>
